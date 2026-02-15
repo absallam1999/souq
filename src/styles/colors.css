@@ -1,0 +1,175 @@
+:root {
+  /* Primary Colors - Premium Purple */
+  --color-primary-50: #f5f3ff;
+  --color-primary-100: #ede9fe;
+  --color-primary-200: #ddd6fe;
+  --color-primary-300: #c4b5fd;
+  --color-primary-400: #a78bfa;
+  --color-primary-500: #8b5cf6;
+  --color-primary-600: #7c3aed;
+  --color-primary-700: #6d28d9;
+  --color-primary-800: #5b21b6;
+  --color-primary-900: #4c1d95;
+
+  /* Secondary Colors - Forest Green */
+  --color-secondary-50: #ecfdf3;
+  --color-secondary-100: #d1fae5;
+  --color-secondary-200: #a7f3d0;
+  --color-secondary-300: #6ee7b7;
+  --color-secondary-400: #34d399;
+  --color-secondary-500: #10b981;
+  --color-secondary-600: #059669;
+  --color-secondary-700: #047857;
+  --color-secondary-800: #065f46;
+  --color-secondary-900: #064e3b;
+
+  /* Amber Accent - Warm Gold */
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-200: #fde68a;
+  --color-amber-300: #fcd34d;
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+  --color-amber-700: #b45309;
+  --color-amber-800: #92400e;
+  --color-amber-900: #78350f;
+
+  /* Neutral/Gray Scale - Premium Grays */
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f4f4f5;
+  --color-neutral-200: #e4e4e7;
+  --color-neutral-300: #d4d4d8;
+  --color-neutral-400: #a1a1aa;
+  --color-neutral-500: #71717a;
+  --color-neutral-600: #52525b;
+  --color-neutral-700: #3f3f46;
+  --color-neutral-800: #27272a;
+  --color-neutral-900: #18181b;
+  --color-neutral-950: #09090b;
+
+  /* Semantic Colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* Background Colors - Light Mode */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-tertiary: #f3f4f6;
+  --bg-card: #ffffff;
+  --bg-modal: #ffffff;
+
+  /* Text Colors - Light Mode */
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-tertiary: #9ca3af;
+  --text-inverse: #ffffff;
+  --text-disabled: #d1d5db;
+
+  /* Border Colors - Light Mode */
+  --border-light: #e5e7eb;
+  --border-default: #d1d5db;
+  --border-dark: #9ca3af;
+  --border-focus: #7c3aed;
+}
+
+/* Dark Mode Variables */
+.dark {
+  /* Background Colors - Dark Mode */
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-tertiary: #374151;
+  --bg-card: #1f2937;
+  --bg-modal: #1f2937;
+
+  /* Text Colors - Dark Mode */
+  --text-primary: #f9fafb;
+  --text-secondary: #e5e7eb;
+  --text-tertiary: #9ca3af;
+  --text-inverse: #111827;
+  --text-disabled: #4b5563;
+
+  /* Border Colors - Dark Mode */
+  --border-light: #374151;
+  --border-default: #4b5563;
+  --border-dark: #6b7280;
+  --border-focus: #8b5cf6;
+}
+
+/* Gradient Definitions */
+:root {
+  /* Primary Gradients */
+  --gradient-primary-start: #7c3aed;
+  --gradient-primary-end: #6d28d9;
+  --gradient-primary-subtle: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.1) 0%,
+    rgba(109, 40, 217, 0.1) 100%
+  );
+  --gradient-primary-bold: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+
+  /* Secondary Gradients (unchanged) */
+  --gradient-secondary-start: #059669;
+  --gradient-secondary-end: #047857;
+  --gradient-secondary-subtle: linear-gradient(
+    135deg,
+    rgba(5, 150, 105, 0.1) 0%,
+    rgba(4, 120, 87, 0.1) 100%
+  );
+  --gradient-secondary-bold: linear-gradient(135deg, #059669 0%, #047857 100%);
+
+  /* Amber Gradients (unchanged) */
+  --gradient-amber-start: #d97706;
+  --gradient-amber-end: #b45309;
+  --gradient-amber-subtle: linear-gradient(
+    135deg,
+    rgba(217, 119, 6, 0.1) 0%,
+    rgba(180, 83, 9, 0.1) 100%
+  );
+  --gradient-amber-bold: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+
+  /* Combined Gradients */
+  --gradient-primary-secondary: linear-gradient(
+    135deg,
+    #7c3aed 0%,
+    #059669 100%
+  );
+  --gradient-primary-amber: linear-gradient(135deg, #7c3aed 0%, #d97706 100%);
+  --gradient-secondary-amber: linear-gradient(135deg, #059669 0%, #d97706 100%);
+}
+
+/* Shadow Definitions */
+:root {
+  /* Primary Shadows */
+  --shadow-primary-subtle:
+    0 4px 6px -1px rgba(124, 58, 237, 0.1),
+    0 2px 4px -1px rgba(124, 58, 237, 0.06);
+  --shadow-primary-medium:
+    0 10px 15px -3px rgba(124, 58, 237, 0.2),
+    0 4px 6px -2px rgba(124, 58, 237, 0.1);
+  --shadow-primary-bold:
+    0 20px 25px -5px rgba(124, 58, 237, 0.3),
+    0 10px 10px -5px rgba(124, 58, 237, 0.1);
+
+  /* Card Shadows */
+  --shadow-card:
+    0 2px 4px rgba(124, 58, 237, 0.05), 0 4px 6px rgba(0, 0, 0, 0.03);
+  --shadow-card-hover:
+    0 10px 25px rgba(124, 58, 237, 0.1), 0 8px 10px rgba(0, 0, 0, 0.05);
+  --shadow-card-premium:
+    0 20px 25px -5px rgba(124, 58, 237, 0.15),
+    0 10px 10px -5px rgba(0, 0, 0, 0.02);
+}
+
+/* Dark mode shadow adjustments */
+.dark {
+  --shadow-card:
+    0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(124, 58, 237, 0.1);
+  --shadow-card-hover:
+    0 10px 25px rgba(124, 58, 237, 0.2), 0 8px 10px rgba(0, 0, 0, 0.3);
+  --shadow-card-premium:
+    0 20px 25px -5px rgba(124, 58, 237, 0.25),
+    0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}

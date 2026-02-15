@@ -1,0 +1,135 @@
+@layer components {
+  /* Container */
+  .container-custom {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container-custom {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6em 1.2em;
+    font-weight: var(--font-medium);
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .btn-primary {
+    background-color: var(--color-primary-600);
+    color: var(--text-inverse);
+  }
+
+  .btn-primary:hover:not(:disabled) {
+    background-color: var(--color-primary-700);
+    transform: scale(1.05);
+  }
+
+  .btn-primary:focus-visible {
+    outline: 2px solid var(--color-primary-500);
+    outline-offset: 2px;
+  }
+
+  .btn-outline {
+    border: 2px solid var(--color-primary-600);
+    color: var(--color-primary-600);
+    background-color: transparent;
+  }
+
+  .btn-outline:hover:not(:disabled) {
+    background-color: var(--color-primary-600);
+    color: var(--text-inverse);
+  }
+
+  /* Cards */
+  .card {
+    background-color: var(--bg-card);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border-light);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Form Inputs */
+  .input-field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: var(--text-base);
+    color: var(--text-primary);
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-default);
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+  }
+
+  .input-field:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0 0 0 2px var(--border-focus);
+  }
+
+  .input-field::placeholder {
+    color: var(--text-tertiary);
+  }
+
+  /* Badges */
+  .badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    border-radius: 9999px;
+  }
+
+  .badge-primary {
+    background-color: var(--color-primary-100);
+    color: var(--color-primary-800);
+  }
+
+  .badge-success {
+    background-color: var(--color-secondary-100);
+    color: var(--color-secondary-800);
+  }
+
+  .badge-warning {
+    background-color: var(--color-amber-100);
+    color: var(--color-amber-800);
+  }
+
+  .badge-error {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+}
